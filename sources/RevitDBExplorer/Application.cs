@@ -54,7 +54,7 @@ namespace RevitDBExplorer
             RevitDatabaseQueryService.Init();
             RevitDatabaseVisualizationFactory.Init(UIApplication);
             EventMonitor.Register(application);
-
+            //添加panel到上下文选项卡
             ApplicationModifyTab.Init(panel.GetRibbonPanel(), AppSettings.Default.AddRDBECmdToModifyTab);
 
             application.Idling += Application_Idling;
